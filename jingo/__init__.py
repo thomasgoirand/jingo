@@ -10,7 +10,10 @@ from copy import deepcopy
 from django.apps import apps
 from django.conf import settings
 from django.template.base import Origin
-from django.template.loaders.base import Loader as BaseLoader
+try:
+    from django.template.loader import BaseLoader
+except ImportError:
+    from django.template.loaders.base import Loader as BaseLoader
 
 try:
     from importlib import import_module
