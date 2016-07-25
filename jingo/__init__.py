@@ -242,7 +242,7 @@ register = Register()
 class Loader(BaseLoader):
     is_usable = True
 
-    def __init__(self, args):
+    def __init__(self, args=None):
         if has_engine:
             super(Loader, self).__init__(Engine.get_default())
         else:
