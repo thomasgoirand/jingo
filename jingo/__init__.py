@@ -9,7 +9,7 @@ import re
 from django.apps import apps
 from django.conf import settings
 from django.template.base import Origin
-from django.template.loader import BaseLoader
+from django.template.loaders.base import Loader as BaseLoader
 
 try:
     from importlib import import_module
