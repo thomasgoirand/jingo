@@ -8,7 +8,7 @@ import re
 
 from django.apps import apps
 from django.conf import settings
-from django.template.base import Origin, TemplateDoesNotExist
+from django.template.base import Origin
 from django.template.loader import BaseLoader
 
 try:
@@ -72,6 +72,8 @@ log = logging.getLogger('jingo')
 
 _helpers_loaded = False
 
+class TemplateDoesNotExist(Exception):
+    pass
 
 class Template(jinja2.Template):
 
