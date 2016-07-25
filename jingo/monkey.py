@@ -20,7 +20,7 @@ This patch was originally developed by Jeff Balogh.
 
 from __future__ import absolute_import, print_function, unicode_literals
 
-from django.utils import six
+import six
 
 
 def __html__(self):
