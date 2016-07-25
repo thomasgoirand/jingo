@@ -28,15 +28,15 @@ def __html__(self):
 
 
 def patch():
-    from django.forms import forms, formsets, util, widgets
+    from django.forms import forms, formsets, utils, widgets
 
     # Add __html__ methods to these classes:
     classes = [
         forms.BaseForm,
         forms.BoundField,
         formsets.BaseFormSet,
-        util.ErrorDict,
-        util.ErrorList,
+        utils.ErrorDict,
+        utils.ErrorList,
         widgets.Media,
         widgets.RadioFieldRenderer,
     ]
