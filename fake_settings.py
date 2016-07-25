@@ -7,6 +7,9 @@ INSTALLED_APPS = (
     'django.contrib.admin.apps.SimpleAdminConfig',
     'jingo.tests.jinja_app',
     'jingo.tests.django_app',
+    'django.contrib.sites',
+    'django.contrib.contenttypes',
+    'django.contrib.auth',
 )
 TEMPLATE_LOADERS = (
     'jingo.Loader',
